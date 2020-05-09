@@ -12,4 +12,23 @@ hand_value = {
     "straight_flush":9
 }
 
-high_card = 
+
+class Table_info:
+
+    def __init__(self, big_blind, player_count, button):
+        self.big_blind = big_blind
+        self.small_bind = int(big_blind / 2)
+        self.player_count =  player_count
+        self.button = button
+
+
+"""class Hand_value(your_cards, board, position, players):
+    pass"""
+
+
+
+
+
+table = Table_info(200, 6, 1)
+
+print(table.big_blind)
